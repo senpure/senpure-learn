@@ -1,0 +1,23 @@
+
+option java_package = "com.senpure.io.protoc";
+option java_outer_classname = "DemoMessage";
+message Author{
+required string name = 1;
+required int32 phone = 2 ;
+}
+message Book {
+required string name = 1;
+required int32 price = 2;
+required Author author = 3;
+}
+message Student{
+required string name = 1;
+required int32 age = 2;
+required int32 num = 3;
+repeated int32 luckNums = 4;
+repeated string provide = 5;
+required Book readBook = 6 ;
+repeated Book likeBooks = 7 ;
+
+
+}

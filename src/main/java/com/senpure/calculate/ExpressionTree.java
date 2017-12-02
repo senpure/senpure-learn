@@ -1,5 +1,6 @@
 package com.senpure.calculate;
 
+
 import com.senpure.base.util.Assert;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -42,6 +43,7 @@ public class ExpressionTree {
     }
 
     public double caluate() {
+
 
         if (updateLetter) {
             inOrderUpdateLetter(root);
